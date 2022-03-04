@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-wa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Wa Pop up</title>
+</head>
+
+<body>
+    <div class="action">
+        <div class="profile" onclick="menuToggle();">
+            <!-- <img src="wa.png"> -->
+            <button class="btn-contact">
+                <span>Contact Us</span>
+            </button>
+        </div>
+        <div class="menu">
+            <h3>Hubungi Kami <i class="fa-solid fa-headset" style="margin-left: 10px;"></i></h3>
+            <ul>
+                <li><img src="wa.png"><a href="#">Penerimaan Mahasiswa Baru</a></li>
+                <li><img src="wa.png"><a href="#">Biro Administrasi Akademik dan Kemahasiswaan</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function menuToggle() {
+            const toggleMenu = document.querySelector('.menu');
+            toggleMenu.classList.toggle('active')
+        }
+
+        // const hubungi = document.querySelector(".menu")
+        // document.addEventListener("click", function(event) {
+        //     if (event.target.closest(".menu")) return
+
+        //     hubungi.classList.add(".hide-action")
+        // })
+    </script>
+</body>
+
+</html>
